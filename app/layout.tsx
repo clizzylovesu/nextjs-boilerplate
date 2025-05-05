@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
+// Load fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -10,6 +11,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "600"],
 });
 
 export const metadata: Metadata = {
@@ -24,17 +31,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body
-  className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-  style={{ margin: 0, fontFamily: 'Arial, sans-serif' }}
->
-  <nav style={{ background: '#f1f1f1', padding: '1rem', textAlign: 'center' }}>
-    <a href="/" style={{ marginRight: '1rem', color: '#0075ff', textDecoration: 'none' }}>Home</a>
-    <a href="/services" style={{ color: '#0075ff', textDecoration: 'none' }}>Services</a>
-  </nav>
-  <main>{children}</main>
-</body>
-
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
+        style={{ margin: 0, fontFamily: 'Poppins, sans-serif' }}
+      >
+        <nav
+          style={{
+            background: '#f1f1f1',
+            padding: '1rem',
+            textAlign: 'center',
+          }}
+        >
+          <a
+            href="/"
+            style={{
+              marginRight: '1rem',
+              color: '#0075ff',
+              textDecoration: 'none',
+            }}
+          >
+            Home
+          </a>
+          <a
+            href="/services"
+            style={{ color: '#0075ff', textDecoration: 'none' }}
+          >
+            Services
+          </a>
+        </nav>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
+
