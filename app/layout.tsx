@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
-        style={{ margin: 0, fontFamily: 'Poppins, sans-serif' }}
+        style={{ margin: 0 }}
       >
         <nav
           style={{
