@@ -24,13 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <body
+    <body
   className={`${geistSans.variable} ${geistMono.variable} antialiased`}
   style={{ margin: 0, fontFamily: 'Arial, sans-serif' }}
 >
-      >
-        {children}
-      </body>
+  <nav style={{ background: '#f1f1f1', padding: '1rem', textAlign: 'center' }}>
+    <a href="/" style={{ marginRight: '1rem', color: '#0075ff', textDecoration: 'none' }}>Home</a>
+    <a href="/services" style={{ color: '#0075ff', textDecoration: 'none' }}>Services</a>
+  </nav>
+  <main>{children}</main>
+</body>
+
     </html>
   );
 }
