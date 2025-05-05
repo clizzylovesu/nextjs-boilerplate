@@ -64,6 +64,42 @@ export default function Home() {
             </a>
           </p>
         </div>
+        {/* Prescriptions Section */}
+<div style={{ marginTop: '2rem', backgroundColor: '#f0f7ff', borderRadius: '12px', padding: '1.5rem' }}>
+  <h3 style={{ color: '#1a1a1a', marginBottom: '1rem' }}>💊 Prescriptions</h3>
+  <p style={{ lineHeight: '1.8' }}>
+    We dispense NHS and private prescriptions with expert advice and quick service. 
+    You can also <strong>request repeat prescriptions</strong> and speak to our pharmacist for any concerns.
+  </p>
+</div>
+
+{/* NHS Services Section */}
+<div style={{ marginTop: '2rem', backgroundColor: '#f0f7ff', borderRadius: '12px', padding: '1.5rem' }}>
+  <h3 style={{ color: '#1a1a1a', marginBottom: '1rem' }}>🏥 NHS Services</h3>
+  <ul style={{ lineHeight: '1.8', paddingLeft: '1.2rem' }}>
+    <li>Blood pressure checks</li>
+    <li>Emergency contraception</li>
+    <li>Flu & COVID-19 vaccinations</li>
+    <li>Medicine reviews (NMS)</li>
+    <li>Free disposal of old medicines</li>
+  </ul>
+</div>
+
+{/* WhatsApp Booking */}
+<div style={{ marginTop: '2rem', textAlign: 'center' }}>
+  <a href="https://wa.me/441254677447" target="_blank" style={{ 
+    backgroundColor: '#25D366', 
+    color: '#fff', 
+    padding: '0.8rem 1.5rem', 
+    borderRadius: '8px', 
+    textDecoration: 'none', 
+    fontWeight: 'bold', 
+    display: 'inline-block',
+    boxShadow: '0 3px 10px rgba(0,0,0,0.15)'
+  }}>
+    📱 Book via WhatsApp
+  </a>
+</div>
 
         <p style={{ marginTop: '2rem', fontSize: '0.85rem', color: '#888' }}>
           © 2025 4Court Pharmacy · Powered by Next.js + Vercel
